@@ -60,7 +60,9 @@
       <section class="hero section">
         <div class="container overlay">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-button">Замовити послугу</button>
+          <button type="button" class="hero-button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
       <section class="preference section">
@@ -122,28 +124,37 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="activity-list list">
             <li>
-              <img
-                src="./imeg/img1.jpg"
-                alt="верстаємо сайти"
-                width="370"
-                height="294"
-              />
+              <div class="activity-thumb">
+                <img
+                  src="./imeg/img1.jpg"
+                  alt="верстаємо сайти"
+                  width="370"
+                  height="294"
+                />
+                <h3 class="activity-text">Десктопні додатки</h3>
+              </div>
             </li>
             <li>
-              <img
-                src="./imeg/img2.jpg"
-                alt="розробляємо мобільні застосунки"
-                width="370"
-                height="294"
-              />
+              <div class="activity-thumb">
+                <img
+                  src="./imeg/img2.jpg"
+                  alt="розробляємо мобільні застосунки"
+                  width="370"
+                  height="294"
+                />
+                <h3 class="activity-text">Мобільні додатки</h3>
+              </div>
             </li>
             <li>
-              <img
-                src="./imeg/img3.jpg"
-                alt="займаємося дизайном"
-                width="370"
-                height="294"
-              />
+              <div class="activity-thumb">
+                <img
+                  src="./imeg/img3.jpg"
+                  alt="займаємося дизайном"
+                  width="370"
+                  height="294"
+                />
+                <h3 class="activity-text">Дизайнерські рішення</h3>
+              </div>
             </li>
           </ul>
         </div>
@@ -416,5 +427,13 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal btn">
+        <button type="button" class="modal-close-button" data-modal-close>
+          x
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
