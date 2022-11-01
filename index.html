@@ -482,19 +482,19 @@
             name="person-comment"
             placeholder="Введіть текст"
           ></textarea>
-          <input
+          
+          <label for="terms-checkbox" class="checkbox-label"
+            ><input
             id="terms-checkbox"
             class="checkbox-input visually-hidden"
             type="checkbox"
             name="terms-checkbox"
-          />
-          <label for="terms-checkbox" class="checkbox-label"
-            >Погоджуюся з розсилкою та приймаю
+          /><span class="form-box"><svg width="11" height="8">
+            <use href="./imeg/icons.svg#icon-icon-check"></use>
+          </svg></span>Погоджуюся з розсилкою та приймаю
             <a href="#" class="terms-link">Умови договору</a>
           </label>
-          <svg class="form-icon-checkbox" width="16" height="15">
-            <use href="./imeg/icons.svg#icon-icon-check"></use>
-          </svg>
+          
           <button type="submit" class="hero-button">Відправити</button>
         </form>
       </div>
