@@ -757,6 +757,7 @@ height: 15px;
 }
 
 .terms-link{
+  margin-left: 7px;
   color: var(--accent-text-color);
 }
 
